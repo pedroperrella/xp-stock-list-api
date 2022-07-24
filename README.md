@@ -1,1 +1,0 @@
-# xp-stock-list-api
