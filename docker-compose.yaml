@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: stock-list-db
+    image: mysql:8.0.21
+    restart: always
+    env_file: .env
+    ports:
+      - $MYSQL_PORT:$MYSQL_PORT
+    environment:
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+  app:
+    container_name: stock-list
+    depends_on:
+      - db
+    build: .
+    volumes:
+      - ./:/app
+    restart: always
+    stdin_open: true
+    tty: true
+    command: bash
+    env_file: .env
+    ports:
+      - $API_PORT:$API_PORT
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      
