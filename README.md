@@ -2,7 +2,7 @@
 
 API CRUD desenvolvida em Node.js, com Express, MySQL e Sequelize, que conecta informações de ações disponíveis na corretora e contas de clientes que negociam as ações e movimentam a conta.
 
-## Instalação
+## Instalando o projeto
 
 1. Clone o projeto
   `git clone git@github.com:pedroperrella/xp-stock-list-api.git`
@@ -10,7 +10,7 @@ API CRUD desenvolvida em Node.js, com Express, MySQL e Sequelize, que conecta in
 2. Acesse projeto
   `cd xp-stock-list-api.git`
   
-## Configuração
+## Exercutando o projeto
 ### Com Docker
 1. Crie o arquivo `.env`, copie as váriaveis do arquivo `.env.example` e coloque suas váriaveis de ambiente local
 
