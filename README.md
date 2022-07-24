@@ -38,3 +38,16 @@ API CRUD desenvolvida em Node.js, com Express, MySQL e Sequelize, que conecta in
   
 A API retorna todos os endpoints indicados no desafio e faz as devidas validações.
 
+## Considerações Finais
+Esse projeto foi muito desafiador para mim, como eu ainda divido o meu tempo entre trabalho e o curso da Trybe, então acabei não conseguindo entregar com os requisitos adicionais.
+
+Gostei muito de desenvolver esse projeto e pretendo continuar desenvolvendo, melhorando e criando novas funcionalidades que faltam e ter esse projeto no meu portfolio. 
+
+
+##### O que ainda falta ser desenvolvido:
+- [ ] Testes
+- [ ] Autenticação
+- [ ] Lint
+- [ ] Deploy da aplicação
+- [ ] Documentação
+
